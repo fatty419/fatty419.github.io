@@ -3,12 +3,12 @@
 <html lang="zh-cn">
     <head>
         <meta charset="utf-8" />
-        <title>我的博客</title>
+        <title>FATTY的博客</title>
         <meta name="author" content="Fatty419" />
         <meta name="description" content="" />
         <meta name="keywords" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-        <link rel="icon" href="/images/avatar.jpg" />
+        <link rel="icon" href="/images/head.jpg" />
         <script src="https://cdn.staticfile.org/vue/3.3.4/vue.global.prod.min.js"></script>
 <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/6.4.0/css/all.min.css" />
 <link rel="stylesheet" href="/css/fonts.min.css" />
@@ -16,14 +16,6 @@
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
-
-<script src="https://cdn.staticfile.org/highlight.js/11.8.0/highlight.min.js"></script>
-<script src="https://cdn.staticfile.org/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
-<link
-    rel="stylesheet"
-    href="https://cdn.staticfile.org/highlight.js/11.8.0/styles/github.min.css"
-/>
-<script src="/js/lib/highlight.js"></script>
 
 
 
@@ -52,29 +44,29 @@
             <div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
     <nav id="desktop-menu">
         <a class="title" href="/">
-            <span>我的博客</span>
+            <span>FATTY的博客</span>
         </a>
         
         <a href="/">
             <i class="fa-solid fa-主页 fa-fw"></i>
-            <span>&ensp;Home</span>
+            <span>&ensp;主页</span>
         </a>
         
         <a href="/about">
             <i class="fa-solid fa-卡片 fa-fw"></i>
-            <span>&ensp;About</span>
+            <span>&ensp;关于</span>
         </a>
         
         <a href="/archives">
             <i class="fa-solid fa-博客 fa-fw"></i>
-            <span>&ensp;Archives</span>
+            <span>&ensp;文章</span>
         </a>
         
     </nav>
     <nav id="mobile-menu">
         <div class="title" @click="showMenuItems = !showMenuItems">
             <i class="fa-solid fa-bars fa-fw"></i>
-            <span>&emsp;我的博客</span>
+            <span>&emsp;FATTY的博客</span>
         </div>
         <transition name="slide">
             <div class="items" v-show="showMenuItems">
@@ -84,7 +76,7 @@
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa-主页 fa-fw"></i>
                         </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 20%">Home</div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">主页</div>
                     </div>
                 </a>
                 
@@ -93,7 +85,7 @@
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa-卡片 fa-fw"></i>
                         </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 20%">About</div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">关于</div>
                     </div>
                 </a>
                 
@@ -102,7 +94,7 @@
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa-博客 fa-fw"></i>
                         </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 20%">Archives</div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">文章</div>
                     </div>
                 </a>
                 
@@ -116,7 +108,7 @@
 
             <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
                 <div id="home-head">
-    <div id="home-background" ref="homeBackground" data-images="/images/background.jpg"></div>
+    <div id="home-background" ref="homeBackground" data-images="/images/back.png"></div>
     <div id="home-info" @click="homeClick">
         <span class="loop"></span>
         <span class="loop"></span>
@@ -124,7 +116,7 @@
         <span class="loop"></span>
         <span class="info">
             <div class="wrap">
-                <h1>我的博客</h1>
+                <h1>FATTY的博客</h1>
                 <h3></h3>
                 <h5></h5>
             </div>
@@ -136,8 +128,8 @@
         
 
 <div class="post">
-    <a href="/2023/09/08/hello-world/">
-        <h2 class="post-title">Hello World</h2>
+    <a href="/2023/09/08/%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D/">
+        <h2 class="post-title">自我介绍</h2>
     </a>
     <div class="category-and-date">
         
@@ -153,19 +145,14 @@
     <div class="description">
         <div class="content" v-pre>
             
-            <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+            <h2 id="基本概况"><a href="#基本概况" class="headerlink" title="基本概况"></a>基本概况</h2><p>福大计算机二学位，转码只为从天坑跳脱。</p>
+<h2 id="自我评估"><a href="#自我评估" class="headerlink" title="自我评估"></a>自我评估</h2><ul>
+<li>熟悉JAVA开发及其所属各类技术栈(只会这个…)</li>
+<li>python也会一点</li>
+<li>擅长熬夜</li>
+<li>会打点篮球</li>
+</ul>
+<h2 id="未来计划"><a href="#未来计划" class="headerlink" title="未来计划"></a>未来计划</h2><p>现在主要处于求职阶段,海投简历ing。希望毕业后成功找到一份合适的工作,转码成功,学习更多前沿的技术(希望不会被35岁解雇),就业方向主要为数据开发工程师。</p>
 
             
         </div>
@@ -175,7 +162,7 @@
         
         
     </div>
-    <a href="/2023/09/08/hello-world/" class="go-post">阅读全文</a>
+    <a href="/2023/09/08/%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D/" class="go-post">阅读全文</a>
 </div>
 
 
@@ -194,22 +181,14 @@
         <div id="card-style">
     <div id="card-div">
         <div class="avatar">
-            <img src="/images/avatar.jpg" alt="avatar" />
+            <img src="/images/head.jpg" alt="avatar" />
         </div>
         <div class="name">Fatty419</div>
         <div class="description">
-            <p>Description<br>…</p>
+            <p>文武双修大学僧</p>
 
         </div>
         
-        
-        <div class="friend-links">
-            
-            <div class="friend-link">
-                <a target="_blank" rel="noopener" href="https://argvchs.github.io">Argvchs</a>
-            </div>
-            
-        </div>
         
     </div>
 </div>
@@ -222,7 +201,7 @@
     <div id="footer-wrap">
         <div>
             &copy;
-            2022 - 2023 我的博客
+            2022 - 2023 FATTY的博客
             <span id="footer-icon">
                 <i class="fa-solid fa-font-awesome fa-fw"></i>
             </span>
